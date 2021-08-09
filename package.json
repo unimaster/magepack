@@ -1,6 +1,6 @@
 {
     "name": "ma-magepack",
-    "version": "2.4.3",
+    "version": "2.4.4",
     "bin": "./cli.js",
     "repository": "https://github.com/unimaster/magepack.git",
     "author": "mageassist",
