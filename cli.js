@@ -16,15 +16,18 @@ program
     .description(
         'Generate optimization configuration based on given page URLs.'
     )
-    .requiredOption('--cms-url <url>', 'CMS page URL.')
+    .requiredOption('--home-url <url>', 'CMS page URL.')
     .requiredOption('--category-url <url>', 'Category page URL.')
     .requiredOption('--product-url <url>', 'Product page URL.')
     .option('--search-url <url>', 'Search page URL.')
-    .option('-u, --auth-username <user>', 'Basic authentication username.')
-    .option('-p, --auth-password <password>', 'Basic authentication password.')
+    .option('-p, --pages <user>', 'Comma separated pages.')
+    // .option('-u, --auth-username <user>', 'Basic authentication username.')
+    // .option('-p, --auth-password <password>', 'Basic authentication password.')
     .option('-d, --debug', 'Enable logging of debugging information.')
+    .option('-h, --headless', 'Don\'t use headless.', false)
     .option('-e, --excl-mods <items>', 'Exclude modules.')
     .action((config) => {
+        logger.level = 3;
         if (config.debug) {
             logger.level = 5;
         }

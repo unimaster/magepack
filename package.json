@@ -1,6 +1,6 @@
 {
     "name": "ma-magepack",
-    "version": "2.4.4",
+    "version": "2.4.5",
     "bin": "./cli.js",
     "repository": "https://github.com/unimaster/magepack.git",
     "author": "mageassist",
@@ -13,12 +13,14 @@
         "node": ">=10"
     },
     "dependencies": {
+        "colorette": "^2.0.19",
         "commander": "^5.0.0",
         "consola": "^2.11.3",
         "glob": "^7.1.6",
         "gzip-size": "^5.1.1",
         "javascript-stringify": "^2.0.1",
         "jsesc": "^3.0.1",
+        "lodash.clone": "^4.5.0",
         "lodash.merge": "^4.6.2",
         "terser": "^4.6.7"
     },
