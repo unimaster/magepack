@@ -26,6 +26,7 @@ program
     .option('-d, --debug', 'Enable logging of debugging information.')
     .option('-h, --headless', 'Don\'t use headless.', false)
     .option('-e, --excl-mods <items>', 'Exclude modules.')
+    .option('-l, --load-ext <items>', 'Load external urls including text (comma separated).')
     .action((config) => {
         logger.level = 3;
         if (config.debug) {
