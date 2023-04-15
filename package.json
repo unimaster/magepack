@@ -1,17 +1,38 @@
 {
-    "name": "ma-magepack",
-    "version": "2.4.6",
-    "bin": "./cli.js",
-    "repository": "https://github.com/unimaster/magepack.git",
-    "author": "mageassist",
-    "license": "OSL-2.0",
-    "main": "index.js",
-    "scripts": {
-        "test": "jest"
+    "_from": "ma-magepack",
+    "_id": "ma-magepack@2.4.6",
+    "_inBundle": false,
+    "_integrity": "sha512-GddQEn5hRaQLBEt+VyEPcKPkDtAl2bMeRJVcwSjiYXDa/rKVUyTb8kDjrDeF3zBFeb2lxEcqXajhIaNJHPMbNA==",
+    "_location": "/ma-magepack",
+    "_phantomChildren": {},
+    "_requested": {
+        "type": "tag",
+        "registry": true,
+        "raw": "ma-magepack",
+        "name": "ma-magepack",
+        "escapedName": "ma-magepack",
+        "rawSpec": "",
+        "saveSpec": null,
+        "fetchSpec": "latest"
     },
-    "engines": {
-        "node": ">=10"
+    "_requiredBy": [
+        "#USER",
+        "/"
+    ],
+    "_resolved": "https://registry.npmjs.org/ma-magepack/-/ma-magepack-2.4.6.tgz",
+    "_shasum": "007728a409720ee579de6d3d125146cefa935144",
+    "_spec": "ma-magepack",
+    "_where": "/root",
+    "author": {
+        "name": "mageassist"
     },
+    "bin": {
+        "ma-magepack": "cli.js"
+    },
+    "bugs": {
+        "url": "https://github.com/unimaster/magepack/issues"
+    },
+    "bundleDependencies": false,
     "dependencies": {
         "colorette": "^2.0.19",
         "commander": "^5.0.0",
@@ -22,22 +43,22 @@
         "jsesc": "^3.0.1",
         "lodash.clone": "^4.5.0",
         "lodash.merge": "^4.6.2",
+        "puppeteer": "^2.1.1",
         "terser": "^4.6.7"
     },
-    "lint-staged": {
-        "*.json": [
-            "prettier --write"
-        ],
-        "*.js": [
-            "prettier --write",
-            "eslint --fix"
-        ]
+    "deprecated": false,
+    "description": "**Version 2.0.0 of Magepack released, with greater performance results and easier usage!**",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "husky": "^4.2.3",
+        "jest": "^26.1.0",
+        "lint-staged": "^10.1.0",
+        "prettier": "^2.0.2"
     },
-    "prettier": {
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "bracketSpacing": true,
-        "tabWidth": 4
+    "engines": {
+        "node": ">=10"
     },
     "eslintConfig": {
         "env": {
@@ -54,21 +75,39 @@
             "ecmaVersion": 8
         }
     },
+    "homepage": "https://github.com/unimaster/magepack#readme",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
         }
     },
-    "devDependencies": {
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.10.1",
-        "eslint-plugin-prettier": "^3.1.2",
-        "husky": "^4.2.3",
-        "jest": "^26.1.0",
-        "lint-staged": "^10.1.0",
-        "prettier": "^2.0.2"
+    "license": "OSL-2.0",
+    "lint-staged": {
+        "*.json": [
+            "prettier --write"
+        ],
+        "*.js": [
+            "prettier --write",
+            "eslint --fix"
+        ]
     },
+    "main": "index.js",
+    "name": "ma-magepack",
     "optionalDependencies": {
         "puppeteer": "^2.1.1"
-    }
+    },
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "tabWidth": 4
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/unimaster/magepack.git"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "version": "2.4.6"
 }
