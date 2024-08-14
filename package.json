@@ -1,6 +1,6 @@
 {
     "_from": "ma-magepack",
-    "_id": "ma-magepack@2.4.7",
+    "_id": "ma-magepack@2.4.8",
     "_inBundle": false,
     "_integrity": "sha512-GddQEn5hRaQLBEt+VyEPcKPkDtAl2bMeRJVcwSjiYXDa/rKVUyTb8kDjrDeF3zBFeb2lxEcqXajhIaNJHPMbNA==",
     "_location": "/ma-magepack",
@@ -109,5 +109,5 @@
     "scripts": {
         "test": "jest"
     },
-    "version": "2.4.7"
+    "version": "2.4.8"
 }
