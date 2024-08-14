@@ -1,6 +1,6 @@
 {
     "_from": "ma-magepack",
-    "_id": "ma-magepack@2.4.6",
+    "_id": "ma-magepack@2.4.7",
     "_inBundle": false,
     "_integrity": "sha512-GddQEn5hRaQLBEt+VyEPcKPkDtAl2bMeRJVcwSjiYXDa/rKVUyTb8kDjrDeF3zBFeb2lxEcqXajhIaNJHPMbNA==",
     "_location": "/ma-magepack",
@@ -32,8 +32,9 @@
     "bugs": {
         "url": "https://github.com/unimaster/magepack/issues"
     },
-    "bundleDependencies": false,
+    "bundleDependencies": [],
     "dependencies": {
+        "chalk": "^4.1.2",
         "colorette": "^2.0.19",
         "commander": "^5.0.0",
         "consola": "^2.11.3",
@@ -43,7 +44,6 @@
         "jsesc": "^3.0.1",
         "lodash.clone": "^4.5.0",
         "lodash.merge": "^4.6.2",
-        "puppeteer": "^2.1.1",
         "terser": "^4.6.7"
     },
     "deprecated": false,
@@ -109,5 +109,5 @@
     "scripts": {
         "test": "jest"
     },
-    "version": "2.4.6"
+    "version": "2.4.7"
 }
