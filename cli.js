@@ -27,6 +27,11 @@ program
     .option('-h, --headless', 'Don\'t use headless.', false)
     .option('-e, --excl-mods <items>', 'Exclude modules.')
     .option('-l, --load-ext <items>', 'Load external urls including text (comma separated).')
+    .option(
+        '-c, --config <path>',
+        'Configuration file path.',
+        'magepack.config.js'
+    )
     .action((config) => {
         logger.level = 3;
         if (config.debug) {
@@ -44,14 +49,15 @@ program
         'Configuration file path.',
         'magepack.config.js'
     )
+    .option('-t, --theme <path>', 'Website theme.', null)
     .option('-g, --glob <path>', 'Glob pattern of themes to bundle.')
     .option('-d, --debug', 'Enable logging of debugging information.')
-    .action(({ config, debug, glob }) => {
-        if (debug) {
+    .action((config) => {
+        if (config.debug) {
             logger.level = 5;
         }
 
-        require('./lib/bundle')(config, glob).catch(logger.error);
+        require('./lib/bundle')(config).catch(logger.error);
     });
 
 program.parse(process.argv);
